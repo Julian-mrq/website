@@ -3,65 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Your Name - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 </head>
 <body>
+    <canvas id="particleCanvas"></canvas>
     <header>
         <nav>
+            <div class="logo">Your Name</div>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#blog">BLOG</a></li>
+                <li><a href="#impossible-list">IMPOSSIBLE LIST</a></li>
+                <li><a href="#cv">CV</a></li>
             </ul>
         </nav>
     </header>
-
     <main>
-        <section id="home">
+        <section id="hero">
+            <img src="your-profile-picture.jpg" alt="Your Name" class="profile-picture">
             <h1>Your Name</h1>
-            <p>Your Title or Tagline</p>
-        </section>
-
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Your bio goes here...</p>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <img src="placeholder1.jpg" alt="Project 1">
-                    <h3>Project 1</h3>
-                    <p>Description of Project 1</p>
-                </div>
-                <div class="project-card">
-                    <img src="placeholder2.jpg" alt="Project 2">
-                    <h3>Project 2</h3>
-                    <p>Description of Project 2</p>
-                </div>
-                <!-- Add more project cards as needed -->
+            <p>Student, Developer & Runner</p>
+            <div class="social-icons">
+                <!-- Add your social media icons here -->
             </div>
         </section>
-
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form>
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <textarea placeholder="Message"></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </section>
     </main>
-
-    <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
+    <script>
+      
+      function setupParticlesBackground() {
+        tsParticles.load("tsparticles", {
+          particles: {
+            links: {
+              enable: true,
+              distance: 100,
+              opacity: 0.5,
+            },
+            number: {
+              density: {
+                enable: true,
+                value_area: 800,
+              },
+              value: 55,
+            },
+            size: {
+              value: 3,
+            },
+            move: {
+              direction: 'none',
+              enable: true,
+              outMode: 'bounce',
+              random: false,
+              speed: 2,
+              straight: false,
+            },
+            opacity: {
+              value: 0.5,
+            },
+          },
+          retina_detect: true,
+        });
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-links@2.12.0/tsparticles.preset.links.bundle.min.js" integrity="sha256-Kq9IblhtnUOu75DRD4BIgJ4p4/7JUMMy6eXI/YcTo0c=" crossorigin="anonymous" async="" defer="" onload="setupParticlesBackground()"></script>
+    
 </body>
 </html>
