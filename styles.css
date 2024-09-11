@@ -26,8 +26,8 @@ header {
 
 nav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-end;
+  margin: 0 auto;
 }
 
 .logo {
@@ -38,6 +38,8 @@ nav {
 nav ul {
   list-style-type: none;
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
@@ -45,7 +47,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: rgb(215, 214, 214);
   text-decoration: none;
 }
 
@@ -56,11 +58,12 @@ nav ul li a {
   justify-content: center;
   height: 100vh;
   text-align: center;
+  background-color: #ffffff00;
 }
 
 .profile-picture {
-  width: 150px;
-  height: 150px;
+  width: 275px;
+  height: 275px;
   border-radius: 50%;
   margin-bottom: 20px;
 }
@@ -72,4 +75,89 @@ h1 {
 
 .social-icons {
   margin-top: 20px;
+}
+
+.container {
+  padding: 20px;
+  margin: 20px 0;
+  align-items: center ;
+}
+
+.intro-container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.intro-container p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.transparent-button {
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid rgb(215, 214, 214);
+  color: rgb(215, 214, 214);
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
+  border-radius: 10px;
+}
+
+.transparent-button:hover {
+  color: #777777;
+  border: 2px solid #777777;
+}
+
+.container {
+  background-color: rgb(240, 240, 240);
+  color: rgb(37, 37, 37);
+  /* max-width: 600px; */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 250px;
+  padding-right: 250px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /* display: flex; */
+}
+
+.container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.container p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 30%;
+  margin:auto;
+}
+
+.card-image {
+  height: 200px;
+  background-color: #ddd;
+  background-size: cover;
+  background-position: center;
+}
+.card-content {
+  padding: 20px;
+}
+
+.card-container {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
 }

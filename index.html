@@ -3,34 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Julian Marques - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <canvas id="particleCanvas"></canvas>
     <header>
         <nav>
-            <div class="logo">Your Name</div>
+            <!-- <div class="logo">Julian Marques</div> -->
             <ul>
-                <li><a href="#home">HOME</a></li>
+                <!-- <li><a href="#home">HOME</a></li>
                 <li><a href="#blog">BLOG</a></li>
-                <li><a href="#impossible-list">IMPOSSIBLE LIST</a></li>
-                <li><a href="#cv">CV</a></li>
+                <li><a href="#impossible-list">IMPOSSIBLE LIST</a></li> -->
+                <li>
+                  <button class="transparent-button">Télécharger le CV</button>
             </ul>
         </nav>
     </header>
     <main>
         <section id="hero">
-            <img src="your-profile-picture.jpg" alt="Your Name" class="profile-picture">
-            <h1>Your Name</h1>
-            <p>Student, Developer & Runner</p>
+            <img src="img/profile.jpg" alt="Julian Marques" class="profile-picture">
+            <h1>Julian Marques</h1>
             <div class="social-icons">
                 <!-- Add your social media icons here -->
             </div>
+            <div class="intro-container">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
         </section>
+        <div class="container">
+          <div>
+            <h2>Hey!</h2>
+            <p>I'm Diogo Torres Correia from Portugal!</p>
+          </div>
+          
+
+          
+          <div class="card-container">
+            <div class="card">
+              <div class="card-image" style="background-image: url('/api/placeholder/350/200');"></div>
+              <div class="card-content">
+                  <h2>Domposer</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+  
+            <div class="card">
+              <div class="card-image" style="background-image: url('/api/placeholder/350/200');"></div>
+              <div class="card-content">
+                  <h2>Domposer</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+  
+            <div class="card">
+              <div class="card-image" style="background-image: url('/api/placeholder/350/200');"></div>
+              <div class="card-content">
+                  <h2>Domposer</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+          
+
+        </div>
     </main>
     <script>
-      
       function setupParticlesBackground() {
         tsParticles.load("tsparticles", {
           particles: {
@@ -66,6 +104,7 @@
       }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-links@2.12.0/tsparticles.preset.links.bundle.min.js" integrity="sha256-Kq9IblhtnUOu75DRD4BIgJ4p4/7JUMMy6eXI/YcTo0c=" crossorigin="anonymous" async="" defer="" onload="setupParticlesBackground()"></script>
+    <script id="define-custom-element-wtd-root" src="chrome-extension://emnoomldgleagdjapdeckpmebokijail/scripts/defineCustomElementsInjected.js" data-params="{&quot;elementName&quot;:&quot;wtd-root&quot;,&quot;eventName&quot;:&quot;customElements.defined&quot;,&quot;isShadowRoot&quot;:true}"></script>
     
 </body>
 </html>
