@@ -1,110 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Julian Marques - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Julian Marques - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <canvas id="particleCanvas"></canvas>
-    <header>
-        <nav>
-            <!-- <div class="logo">Julian Marques</div> -->
-            <ul>
-                <!-- <li><a href="#home">HOME</a></li>
-                <li><a href="#blog">BLOG</a></li>
-                <li><a href="#impossible-list">IMPOSSIBLE LIST</a></li> -->
-                <li>
-                  <button class="transparent-button">Télécharger le CV</button>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="hero">
-            <img src="img/profile.jpg" alt="Julian Marques" class="profile-picture">
-            <h1>Julian Marques</h1>
-            <div class="social-icons">
-                <!-- Add your social media icons here -->
-            </div>
-            <div class="intro-container">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            </div>
-        </section>
-        <div class="container">
-          <div>
-            <h2>Hey!</h2>
-            <p>I'm Diogo Torres Correia from Portugal!</p>
-          </div>
-          
+  <header>
+    <nav>
+      <!-- <div class="logo">Julian Marques</div> -->
+      <ul>
+        <button class="transparent-button">Télécharger le CV</button>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div id="tsparticles" style="position: fixed; inset: 0; z-index: -1000;">
+      <canvas data-generated="true"
+        style="width: 100% !important; height: 100% !important; position: fixed !important; z-index: -1000 !important; top: 0px !important; left: 0px !important; pointer-events: none;"
+        aria-hidden="true" width="1186" height="1536">
+      </canvas>
+    </div>
 
-          
-          <div class="card-container">
-            <div class="card">
-              <div class="card-image" style="background-image: url('/api/placeholder/350/200');"></div>
-              <div class="card-content">
-                  <h2>Domposer</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              </div>
-            </div>
-  
-            <div class="card">
-              <div class="card-image" style="background-image: url('/api/placeholder/350/200');"></div>
-              <div class="card-content">
-                  <h2>Domposer</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              </div>
-            </div>
-  
-            <div class="card">
-              <div class="card-image" style="background-image: url('/api/placeholder/350/200');"></div>
-              <div class="card-content">
-                  <h2>Domposer</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              </div>
-            </div>
-          </div>
-          
+    <div id="hero">
 
+      <img src="img/profile.jpg" alt="Julian Marques" class="profile-picture">
+      <h1>Julian Marques</h1>
+      <div class="social-icons">
+        <!-- Add your social media icons here -->
+        <div class="has-tooltip">
+          <a href="https://github.com/Julian-mrq" target="_blank" rel="noopener" data-umami-event="github-social-hero">
+            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg>
+          </a>
+          <span class="tooltip" tip-position="bottom"></span>
         </div>
-    </main>
-    <script>
-      function setupParticlesBackground() {
-        tsParticles.load("tsparticles", {
-          particles: {
-            links: {
-              enable: true,
-              distance: 100,
-              opacity: 0.5,
-            },
-            number: {
-              density: {
-                enable: true,
-                value_area: 800,
-              },
-              value: 55,
-            },
-            size: {
-              value: 3,
-            },
-            move: {
-              direction: 'none',
-              enable: true,
-              outMode: 'bounce',
-              random: false,
-              speed: 2,
-              straight: false,
-            },
-            opacity: {
-              value: 0.5,
-            },
+
+        <div class="has-tooltip">
+          <a href="mailto:julmarques.jm@gmail.com" target="_blank" rel="noopener" data-umami-event="mail-social-hero">
+            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>E-mail</title><path d="M24 4.5v15c0 .85-.65 1.5-1.5 1.5H21V7.387l-9 6.463-9-6.463V21H1.5C.649 21 0 20.35 0 19.5v-15c0-.425.162-.8.431-1.068C.7 3.16 1.076 3 1.5 3H2l10 7.25L22 3h.5c.425 0 .8.162 1.069.432.27.268.431.643.431 1.068z"></path></svg>
+          </a>
+          <span class="tooltip" tip-position="bottom"></span>
+        </div>
+      </div>
+      <div class="intro-container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div>
+        <h2>Hey!</h2>
+        <p>I'm Diogo Torres Correia from Portugal!</p>
+      </div>
+
+      <div class="card-container">
+        <div class="card">
+          <div class="card-image" style="background-image: url('/api/placeholder/350/200');"></div>
+          <div class="card-content">
+            <h2>Domposer</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image" style="background-image: url('/api/placeholder/350/200');"></div>
+          <div class="card-content">
+            <h2>Domposer</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image" style="background-image: url('/api/placeholder/350/200');"></div>
+          <div class="card-content">
+            <h2>Domposer</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- <div class="skills-container">
+      <div class="skill-row" style="--duration:15951ms; --direction:normal;">
+        <div class="inner">
+          <div class="skill-item"><img src="path/to/js-icon.png" alt="Access">Access</div>
+          <div class="skill-item"><img src="path/to/python-icon.png" alt="VBA">VBA</div>
+          <div class="skill-item"><img src="path/to/python-icon.png" alt="Power BI">Power BI</div>
+          <div class="skill-item"><img src="path/to/python-icon.png" alt="Datastudio">Datastudio</div>
+          <div class="skill-item"><img src="path/to/python-icon.png" alt="DBT">DBT</div>
+        </div>
+      </div>
+      <div class="skill-row" style="--duration:15951ms; --direction:normal;">
+        <div class="inner">
+          <div class="skill-item"><img src="path/to/js-icon.png" alt="Access">Access</div>
+          <div class="skill-item"><img src="path/to/python-icon.png" alt="VBA">VBA</div>
+          <div class="skill-item"><img src="path/to/python-icon.png" alt="Power BI">Power BI</div>
+          <div class="skill-item"><img src="path/to/python-icon.png" alt="Datastudio">Datastudio</div>
+          <div class="skill-item"><img src="path/to/python-icon.png" alt="DBT">DBT</div>
+        </div>
+      </div>
+      <div class="skill-row" style="--duration:15951ms; --direction:normal;">
+        <div class="inner">
+          <div class="skill-item"><img src="path/to/js-icon.png" alt="Access">Access</div>
+          <div class="skill-item"><img src="path/to/python-icon.png" alt="VBA">VBA</div>
+          <div class="skill-item"><img src="path/to/python-icon.png" alt="Power BI">Power BI</div>
+          <div class="skill-item"><img src="path/to/python-icon.png" alt="Datastudio">Datastudio</div>
+          <div class="skill-item"><img src="path/to/python-icon.png" alt="DBT">DBT</div>
+        </div>
+      </div>
+      <div class="fade"></div>
+    </div> -->
+    <div class="tag-list">
+      <div class="loop-slider" style="--duration:25000ms; --direction:normal;">
+        <div class="inner">
+          <div class="tag">
+            <iconify-icon height="none" icon="logos:arduino" class="icon object-contain rounded-sm duration-150 aspect-1 flex flex-shrink-0 m-2 sm:w-[calc(6rem-1rem)] h-[calc(5rem-1rem)] sm:h-[calc(6rem-1rem)] w-[calc(5rem-1rem)]"></iconify-icon>
+            <div>JavaScript</div>
+          </div>
+          <div class="tag"><span>#</span> webdev</div>
+          <div class="tag"><span>#</span> Typescript</div>
+          <div class="tag">
+            <iconify-icon height="none" icon="logos:arduino" class="icon object-contain rounded-sm duration-150 aspect-1 flex flex-shrink-0 m-2 sm:w-[calc(6rem-1rem)] h-[calc(5rem-1rem)] sm:h-[calc(6rem-1rem)] w-[calc(5rem-1rem)]"></iconify-icon>
+            <div>JavaScript</div>
+          </div>
+          <div class="tag">
+            <iconify-icon height="none" icon="logos:arduino" class="icon object-contain rounded-sm duration-150 aspect-1 flex flex-shrink-0 m-2 sm:w-[calc(6rem-1rem)] h-[calc(5rem-1rem)] sm:h-[calc(6rem-1rem)] w-[calc(5rem-1rem)]"></iconify-icon>
+            <div>JavaScript</div>
+          </div>
+          <!-- duplicated content -->
+          <div class="tag">
+            <iconify-icon height="none" icon="logos:arduino" class="icon object-contain rounded-sm duration-150 aspect-1 flex flex-shrink-0 m-2 sm:w-[calc(6rem-1rem)] h-[calc(5rem-1rem)] sm:h-[calc(6rem-1rem)] w-[calc(5rem-1rem)]"></iconify-icon>
+            <div>JavaScript</div>
+          </div>
+          <div class="tag">
+            <iconify-icon height="none" icon="logos:arduino" class="icon object-contain rounded-sm duration-150 aspect-1 flex flex-shrink-0 m-2 sm:w-[calc(6rem-1rem)] h-[calc(5rem-1rem)] sm:h-[calc(6rem-1rem)] w-[calc(5rem-1rem)]"></iconify-icon>
+            <div>JavaScript</div>
+          </div>
+          <div class="tag"><span>#</span> CSS</div>
+          <div class="tag"><span>#</span> React</div>
+          <div class="tag"><span>#</span> Next.js</div>
+        </div>
+      </div>
+      <div class="loop-slider" style="--duration:25000ms; --direction:reverse;">
+        <div class="inner">
+          <div class="tag"><span>#</span> webdev</div>
+          <div class="tag"><span>#</span> Gatsby</div>
+          <div class="tag"><span>#</span> JavaScript</div>
+          <div class="tag"><span>#</span> Tailwind</div>
+          <div class="tag"><span>#</span> Typescript</div>
+          <!-- duplicated content -->
+          <div class="tag"><span>#</span> Gatsby</div>
+          <div class="tag"><span>#</span> HTML</div>
+          <div class="tag"><span>#</span> CSS</div>
+          <div class="tag"><span>#</span> React</div>
+          <div class="tag"><span>#</span> Next.js</div>
+        </div>
+      </div>
+      <div class="loop-slider" style="--duration:25000ms; --direction:normal;">
+        <div class="inner">
+          <div class="tag"><span>#</span> animation</div>
+          <div class="tag"><span>#</span> Tailwind</div>
+          <div class="tag"><span>#</span> React</div>
+          <div class="tag"><span>#</span> SVG</div>
+          <div class="tag"><span>#</span> HTML</div>
+          <!-- duplicated content -->
+          <div class="tag"><span>#</span> Gatsby</div>
+          <div class="tag"><span>#</span> HTML</div>
+          <div class="tag"><span>#</span> CSS</div>
+          <div class="tag"><span>#</span> React</div>
+          <div class="tag"><span>#</span> Next.js</div>
+        </div>
+      </div>
+      <div class="loop-slider" style="--duration:25000ms; --direction:reverse;">
+        <div class="inner">
+          <div class="tag"><span>#</span> Gatsby</div>
+          <div class="tag"><span>#</span> HTML</div>
+          <div class="tag"><span>#</span> CSS</div>
+          <div class="tag"><span>#</span> React</div>
+          <div class="tag"><span>#</span> Next.js</div>
+          <!-- duplicated content -->
+          <div class="tag"><span>#</span> Gatsby</div>
+          <div class="tag"><span>#</span> HTML</div>
+          <div class="tag"><span>#</span> CSS</div>
+          <div class="tag"><span>#</span> React</div>
+          <div class="tag"><span>#</span> Next.js</div>
+        </div>
+      </div>
+      <div class="loop-slider" style="--duration:25000ms; --direction:normal;">
+        <div class="inner">
+          <div class="tag"><span>#</span> Next.js</div>
+          <div class="tag"><span>#</span> React</div>
+          <div class="tag"><span>#</span> webdev</div>
+          <div class="tag"><span>#</span> Typescript</div>
+          <div class="tag"><span>#</span> Gatsby</div>
+          <!-- duplicated content -->
+          <div class="tag"><span>#</span> Next.js</div>
+          <div class="tag"><span>#</span> React</div>
+          <div class="tag"><span>#</span> webdev</div>
+          <div class="tag"><span>#</span> Typescript</div>
+          <div class="tag"><span>#</span> Gatsby</div>
+        </div>
+      </div>
+      <div class="fade"></div>
+    </div>
+
+  </main>
+  <script>
+    function setupParticlesBackground() {
+      tsParticles.load("tsparticles", {
+        particles: {
+          links: {
+            enable: true,
+            distance: 100,
+            opacity: 0.5,
           },
-          retina_detect: true,
+          number: {
+            density: {
+              enable: true,
+              value_area: 800,
+            },
+            value: 55,
+          },
+          size: {
+            value: 3,
+          },
+          move: {
+            direction: 'none',
+            enable: true,
+            outMode: 'bounce',
+            random: false,
+            speed: 2,
+            straight: false,
+          },
+          opacity: {
+            value: 0.5,
+          },
+        },
+        retina_detect: true,
+        fullScreen: {
+          enable: true,
+          zIndex: -1000 
+        }
+      });
+    }
+
+  </script>
+  <script async="" defer="" data-website-id="25c8aedf-a960-4b55-8c70-7bc4b2ad587b"
+    src="https://umami.diogotc.com/hellothere.js" data-domains="diogotc.com,www.diogotc.com"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // 
+      const navbar = document.querySelector("nav");
+      const observer = new IntersectionObserver(entries => {
+        if (entries[0].boundingClientRect.y < 0) {
+          navbar.classList.add("navbar--sticky");
+        } else {
+          navbar.classList.remove("navbar--sticky");
+        }
+      });
+      observer.observe(document.querySelector("#navbar-trigger"));
+
+      const drawer = document.getElementById("navbar-drawer");
+      const drawerOpenBtn = document.getElementById("drawer-open");
+      const drawerCloseBtn = document.getElementById("drawer-close");
+
+      drawerOpenBtn.addEventListener("click", () => {
+        drawer.showModal();
+      });
+      document.querySelectorAll("#drawer-close, #navbar-drawer a").forEach(element => {
+        element.addEventListener("click", () => {
+          drawer.close();
         });
-      }
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-links@2.12.0/tsparticles.preset.links.bundle.min.js" integrity="sha256-Kq9IblhtnUOu75DRD4BIgJ4p4/7JUMMy6eXI/YcTo0c=" crossorigin="anonymous" async="" defer="" onload="setupParticlesBackground()"></script>
-    <script id="define-custom-element-wtd-root" src="chrome-extension://emnoomldgleagdjapdeckpmebokijail/scripts/defineCustomElementsInjected.js" data-params="{&quot;elementName&quot;:&quot;wtd-root&quot;,&quot;eventName&quot;:&quot;customElements.defined&quot;,&quot;isShadowRoot&quot;:true}"></script>
-    
+      });
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-links@2.12.0/tsparticles.preset.links.bundle.min.js"
+    integrity="sha256-Kq9IblhtnUOu75DRD4BIgJ4p4/7JUMMy6eXI/YcTo0c=" crossorigin="anonymous" async="" defer=""
+    onload="setupParticlesBackground()"></script>
+  <script id="define-custom-element-wtd-root"
+    src="chrome-extension://emnoomldgleagdjapdeckpmebokijail/scripts/defineCustomElementsInjected.js"
+    data-params="{&quot;elementName&quot;:&quot;wtd-root&quot;,&quot;eventName&quot;:&quot;customElements.defined&quot;,&quot;isShadowRoot&quot;:true}"></script>
+  <wtd-root id="cashback"></wtd-root>
+  <script id="define-custom-element-wtd-root"
+    src="chrome-extension://emnoomldgleagdjapdeckpmebokijail/scripts/defineCustomElementsInjected.js"
+    data-params="{&quot;elementName&quot;:&quot;wtd-root&quot;,&quot;eventName&quot;:&quot;customElements.defined&quot;,&quot;isShadowRoot&quot;:true}"></script>
+  <script id="define-custom-element-wtd-div"
+    src="chrome-extension://emnoomldgleagdjapdeckpmebokijail/scripts/defineCustomElementsInjected.js"
+    data-params="{&quot;elementName&quot;:&quot;wtd-div&quot;,&quot;eventName&quot;:&quot;customElements.defined&quot;,&quot;isShadowRoot&quot;:false}"></script>
+  <wtd-div id="wanteeedContainer"
+    style="position: fixed; display: block; top: 0px; right: 0px; z-index: 2147483647;"><wtd-root
+      id="comparator"></wtd-root><iframe id="wanteeedPanel" data-version="2.64.0" allowtransparency="true"
+      style="background-color: rgb(255, 255, 255); border: none; border-radius: 3px; box-shadow: rgb(181, 181, 181) 1px 1px 3px 2px; clip: auto; display: none; margin-left: auto; margin-right: 12px; margin-top: 12px; position: relative; z-index: 2147483647; height: 1px; width: 1px;"></iframe></wtd-div>
+  <script id="define-custom-element-wtd-root"
+    src="chrome-extension://emnoomldgleagdjapdeckpmebokijail/scripts/defineCustomElementsInjected.js"
+    data-params="{&quot;elementName&quot;:&quot;wtd-root&quot;,&quot;eventName&quot;:&quot;customElements.defined&quot;,&quot;isShadowRoot&quot;:true}"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const container = document.querySelector('.skills-container');
+      const rows = document.querySelectorAll('.skill-row');
+      
+      rows.forEach((row, index) => {
+        const items = [...row.children];
+        const rowWidth = items.reduce((acc, el) => acc + el.offsetWidth, 0);
+        
+        // Définir la largeur de la ligne
+        row.style.width = `${rowWidth}px`;
+        
+        // Déterminer la direction basée sur l'index de la ligne
+        const direction = index % 2 === 0 ? 1 : -1;
+        row.dataset.direction = direction === 1 ? 'right' : 'left';
+        
+        let position = direction === 1 ? 0 : -rowWidth;
+        
+        function animate() {
+          position += direction * 2; // Ajustez la vitesse ici si nécessaire
+          if (direction === 1 && position >= rowWidth) {
+            position = 0;
+          } else if (direction === -1 && position >= 0) {
+            position = -rowWidth;
+          }
+          row.style.transform = `translateX(${position}px)`;
+          requestAnimationFrame(animate);
+        }
+        
+        animate();
+      });
+    });
+  </script>
 </body>
+
 </html>
