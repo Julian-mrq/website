@@ -11,9 +11,11 @@
 <body>
   <header>
     <nav>
-      <!-- <div class="logo">Julian Marques</div> -->
       <ul>
-        <button class="transparent-button">Télécharger le CV</button>
+        <li>
+          <button class="transparent-button">Télécharger le CV</button>
+
+        </li>
       </ul>
     </nav>
   </header>
@@ -42,6 +44,17 @@
           <a href="mailto:julmarques.jm@gmail.com" target="_blank" rel="noopener" data-umami-event="mail-social-hero">
             <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>E-mail</title><path d="M24 4.5v15c0 .85-.65 1.5-1.5 1.5H21V7.387l-9 6.463-9-6.463V21H1.5C.649 21 0 20.35 0 19.5v-15c0-.425.162-.8.431-1.068C.7 3.16 1.076 3 1.5 3H2l10 7.25L22 3h.5c.425 0 .8.162 1.069.432.27.268.431.643.431 1.068z"></path></svg>
           </a>
+          <span class="tooltip" tip-position="bottom"></span>
+        </div>
+
+        <div class="has-tooltip">
+          <a href="https://www.linkedin.com/in/julian-marques/" target="_blank" rel="noopener" data-umami-event="linkedin-social-hero">
+            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <title>LinkedIn</title>
+                <path d="M22.23 0H1.77C.792 0 0 .774 0 1.73v20.538C0 23.225.792 24 1.77 24h20.46c.978 0 1.77-.774 1.77-1.732V1.73C24 .774 23.208 0 22.23 0zM7.12 20.452H3.56V9h3.56v11.452zM5.34 7.66c-1.14 0-1.91-.773-1.91-1.742 0-.985.787-1.742 2-1.742s1.91.757 1.91 1.742c0 .969-.77 1.742-2 1.742zM20.452 20.452h-3.56V14.81c0-1.35-.476-2.27-1.673-2.27-.913 0-1.456.614-1.693 1.205-.087.212-.108.51-.108.807v5.9H9.85s.047-9.566 0-10.553h3.56v1.495c.474-.732 1.322-1.777 3.218-1.777 2.346 0 4.109 1.527 4.109 4.805v6.03z"/>
+            </svg>
+          </a>
+        
           <span class="tooltip" tip-position="bottom"></span>
         </div>
       </div>
@@ -90,128 +103,41 @@
 
     </div>
 
-    <!-- <div class="skills-container">
-      <div class="skill-row" style="--duration:15951ms; --direction:normal;">
-        <div class="inner">
-          <div class="skill-item"><img src="path/to/js-icon.png" alt="Access">Access</div>
-          <div class="skill-item"><img src="path/to/python-icon.png" alt="VBA">VBA</div>
-          <div class="skill-item"><img src="path/to/python-icon.png" alt="Power BI">Power BI</div>
-          <div class="skill-item"><img src="path/to/python-icon.png" alt="Datastudio">Datastudio</div>
-          <div class="skill-item"><img src="path/to/python-icon.png" alt="DBT">DBT</div>
-        </div>
-      </div>
-      <div class="skill-row" style="--duration:15951ms; --direction:normal;">
-        <div class="inner">
-          <div class="skill-item"><img src="path/to/js-icon.png" alt="Access">Access</div>
-          <div class="skill-item"><img src="path/to/python-icon.png" alt="VBA">VBA</div>
-          <div class="skill-item"><img src="path/to/python-icon.png" alt="Power BI">Power BI</div>
-          <div class="skill-item"><img src="path/to/python-icon.png" alt="Datastudio">Datastudio</div>
-          <div class="skill-item"><img src="path/to/python-icon.png" alt="DBT">DBT</div>
-        </div>
-      </div>
-      <div class="skill-row" style="--duration:15951ms; --direction:normal;">
-        <div class="inner">
-          <div class="skill-item"><img src="path/to/js-icon.png" alt="Access">Access</div>
-          <div class="skill-item"><img src="path/to/python-icon.png" alt="VBA">VBA</div>
-          <div class="skill-item"><img src="path/to/python-icon.png" alt="Power BI">Power BI</div>
-          <div class="skill-item"><img src="path/to/python-icon.png" alt="Datastudio">Datastudio</div>
-          <div class="skill-item"><img src="path/to/python-icon.png" alt="DBT">DBT</div>
-        </div>
-      </div>
-      <div class="fade"></div>
-    </div> -->
-    <div class="tag-list">
-      <div class="loop-slider" style="--duration:25000ms; --direction:normal;">
-        <div class="inner">
-          <div class="tag">
-            <iconify-icon height="none" icon="logos:arduino" class="icon object-contain rounded-sm duration-150 aspect-1 flex flex-shrink-0 m-2 sm:w-[calc(6rem-1rem)] h-[calc(5rem-1rem)] sm:h-[calc(6rem-1rem)] w-[calc(5rem-1rem)]"></iconify-icon>
-            <div>JavaScript</div>
+    <div class="container2">
+      <h1>My Technical Skills</h1>
+      <div id="skills-container"></div>
+    </div>
+
+    <div class="container">
+      <div class="card-container">
+        <div class="card">
+          <div class="card-image" style="background-image: url('/api/placeholder/350/200');"></div>
+          <div class="card-content">
+            <h2>Domposer</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
           </div>
-          <div class="tag"><span>#</span> webdev</div>
-          <div class="tag"><span>#</span> Typescript</div>
-          <div class="tag">
-            <iconify-icon height="none" icon="logos:arduino" class="icon object-contain rounded-sm duration-150 aspect-1 flex flex-shrink-0 m-2 sm:w-[calc(6rem-1rem)] h-[calc(5rem-1rem)] sm:h-[calc(6rem-1rem)] w-[calc(5rem-1rem)]"></iconify-icon>
-            <div>JavaScript</div>
+        </div>
+
+        <div class="card">
+          <div class="card-image" style="background-image: url('/api/placeholder/350/200');"></div>
+          <div class="card-content">
+            <h2>Domposer</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
           </div>
-          <div class="tag">
-            <iconify-icon height="none" icon="logos:arduino" class="icon object-contain rounded-sm duration-150 aspect-1 flex flex-shrink-0 m-2 sm:w-[calc(6rem-1rem)] h-[calc(5rem-1rem)] sm:h-[calc(6rem-1rem)] w-[calc(5rem-1rem)]"></iconify-icon>
-            <div>JavaScript</div>
+        </div>
+
+        <div class="card">
+          <div class="card-image" style="background-image: url('/api/placeholder/350/200');"></div>
+          <div class="card-content">
+            <h2>Domposer</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
           </div>
-          <!-- duplicated content -->
-          <div class="tag">
-            <iconify-icon height="none" icon="logos:arduino" class="icon object-contain rounded-sm duration-150 aspect-1 flex flex-shrink-0 m-2 sm:w-[calc(6rem-1rem)] h-[calc(5rem-1rem)] sm:h-[calc(6rem-1rem)] w-[calc(5rem-1rem)]"></iconify-icon>
-            <div>JavaScript</div>
-          </div>
-          <div class="tag">
-            <iconify-icon height="none" icon="logos:arduino" class="icon object-contain rounded-sm duration-150 aspect-1 flex flex-shrink-0 m-2 sm:w-[calc(6rem-1rem)] h-[calc(5rem-1rem)] sm:h-[calc(6rem-1rem)] w-[calc(5rem-1rem)]"></iconify-icon>
-            <div>JavaScript</div>
-          </div>
-          <div class="tag"><span>#</span> CSS</div>
-          <div class="tag"><span>#</span> React</div>
-          <div class="tag"><span>#</span> Next.js</div>
         </div>
       </div>
-      <div class="loop-slider" style="--duration:25000ms; --direction:reverse;">
-        <div class="inner">
-          <div class="tag"><span>#</span> webdev</div>
-          <div class="tag"><span>#</span> Gatsby</div>
-          <div class="tag"><span>#</span> JavaScript</div>
-          <div class="tag"><span>#</span> Tailwind</div>
-          <div class="tag"><span>#</span> Typescript</div>
-          <!-- duplicated content -->
-          <div class="tag"><span>#</span> Gatsby</div>
-          <div class="tag"><span>#</span> HTML</div>
-          <div class="tag"><span>#</span> CSS</div>
-          <div class="tag"><span>#</span> React</div>
-          <div class="tag"><span>#</span> Next.js</div>
-        </div>
-      </div>
-      <div class="loop-slider" style="--duration:25000ms; --direction:normal;">
-        <div class="inner">
-          <div class="tag"><span>#</span> animation</div>
-          <div class="tag"><span>#</span> Tailwind</div>
-          <div class="tag"><span>#</span> React</div>
-          <div class="tag"><span>#</span> SVG</div>
-          <div class="tag"><span>#</span> HTML</div>
-          <!-- duplicated content -->
-          <div class="tag"><span>#</span> Gatsby</div>
-          <div class="tag"><span>#</span> HTML</div>
-          <div class="tag"><span>#</span> CSS</div>
-          <div class="tag"><span>#</span> React</div>
-          <div class="tag"><span>#</span> Next.js</div>
-        </div>
-      </div>
-      <div class="loop-slider" style="--duration:25000ms; --direction:reverse;">
-        <div class="inner">
-          <div class="tag"><span>#</span> Gatsby</div>
-          <div class="tag"><span>#</span> HTML</div>
-          <div class="tag"><span>#</span> CSS</div>
-          <div class="tag"><span>#</span> React</div>
-          <div class="tag"><span>#</span> Next.js</div>
-          <!-- duplicated content -->
-          <div class="tag"><span>#</span> Gatsby</div>
-          <div class="tag"><span>#</span> HTML</div>
-          <div class="tag"><span>#</span> CSS</div>
-          <div class="tag"><span>#</span> React</div>
-          <div class="tag"><span>#</span> Next.js</div>
-        </div>
-      </div>
-      <div class="loop-slider" style="--duration:25000ms; --direction:normal;">
-        <div class="inner">
-          <div class="tag"><span>#</span> Next.js</div>
-          <div class="tag"><span>#</span> React</div>
-          <div class="tag"><span>#</span> webdev</div>
-          <div class="tag"><span>#</span> Typescript</div>
-          <div class="tag"><span>#</span> Gatsby</div>
-          <!-- duplicated content -->
-          <div class="tag"><span>#</span> Next.js</div>
-          <div class="tag"><span>#</span> React</div>
-          <div class="tag"><span>#</span> webdev</div>
-          <div class="tag"><span>#</span> Typescript</div>
-          <div class="tag"><span>#</span> Gatsby</div>
-        </div>
-      </div>
-      <div class="fade"></div>
+
     </div>
 
   </main>
@@ -253,89 +179,62 @@
         }
       });
     }
-
-  </script>
-  <script async="" defer="" data-website-id="25c8aedf-a960-4b55-8c70-7bc4b2ad587b"
-    src="https://umami.diogotc.com/hellothere.js" data-domains="diogotc.com,www.diogotc.com"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      // 
-      const navbar = document.querySelector("nav");
-      const observer = new IntersectionObserver(entries => {
-        if (entries[0].boundingClientRect.y < 0) {
-          navbar.classList.add("navbar--sticky");
-        } else {
-          navbar.classList.remove("navbar--sticky");
-        }
-      });
-      observer.observe(document.querySelector("#navbar-trigger"));
-
-      const drawer = document.getElementById("navbar-drawer");
-      const drawerOpenBtn = document.getElementById("drawer-open");
-      const drawerCloseBtn = document.getElementById("drawer-close");
-
-      drawerOpenBtn.addEventListener("click", () => {
-        drawer.showModal();
-      });
-      document.querySelectorAll("#drawer-close, #navbar-drawer a").forEach(element => {
-        element.addEventListener("click", () => {
-          drawer.close();
-        });
-      });
-    });
   </script>
   <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-links@2.12.0/tsparticles.preset.links.bundle.min.js"
     integrity="sha256-Kq9IblhtnUOu75DRD4BIgJ4p4/7JUMMy6eXI/YcTo0c=" crossorigin="anonymous" async="" defer=""
-    onload="setupParticlesBackground()"></script>
-  <script id="define-custom-element-wtd-root"
-    src="chrome-extension://emnoomldgleagdjapdeckpmebokijail/scripts/defineCustomElementsInjected.js"
-    data-params="{&quot;elementName&quot;:&quot;wtd-root&quot;,&quot;eventName&quot;:&quot;customElements.defined&quot;,&quot;isShadowRoot&quot;:true}"></script>
-  <wtd-root id="cashback"></wtd-root>
-  <script id="define-custom-element-wtd-root"
-    src="chrome-extension://emnoomldgleagdjapdeckpmebokijail/scripts/defineCustomElementsInjected.js"
-    data-params="{&quot;elementName&quot;:&quot;wtd-root&quot;,&quot;eventName&quot;:&quot;customElements.defined&quot;,&quot;isShadowRoot&quot;:true}"></script>
-  <script id="define-custom-element-wtd-div"
-    src="chrome-extension://emnoomldgleagdjapdeckpmebokijail/scripts/defineCustomElementsInjected.js"
-    data-params="{&quot;elementName&quot;:&quot;wtd-div&quot;,&quot;eventName&quot;:&quot;customElements.defined&quot;,&quot;isShadowRoot&quot;:false}"></script>
-  <wtd-div id="wanteeedContainer"
-    style="position: fixed; display: block; top: 0px; right: 0px; z-index: 2147483647;"><wtd-root
-      id="comparator"></wtd-root><iframe id="wanteeedPanel" data-version="2.64.0" allowtransparency="true"
-      style="background-color: rgb(255, 255, 255); border: none; border-radius: 3px; box-shadow: rgb(181, 181, 181) 1px 1px 3px 2px; clip: auto; display: none; margin-left: auto; margin-right: 12px; margin-top: 12px; position: relative; z-index: 2147483647; height: 1px; width: 1px;"></iframe></wtd-div>
-  <script id="define-custom-element-wtd-root"
-    src="chrome-extension://emnoomldgleagdjapdeckpmebokijail/scripts/defineCustomElementsInjected.js"
-    data-params="{&quot;elementName&quot;:&quot;wtd-root&quot;,&quot;eventName&quot;:&quot;customElements.defined&quot;,&quot;isShadowRoot&quot;:true}"></script>
+    onload="setupParticlesBackground()">
+  </script>
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const container = document.querySelector('.skills-container');
-      const rows = document.querySelectorAll('.skill-row');
-      
-      rows.forEach((row, index) => {
-        const items = [...row.children];
-        const rowWidth = items.reduce((acc, el) => acc + el.offsetWidth, 0);
-        
-        // Définir la largeur de la ligne
-        row.style.width = `${rowWidth}px`;
-        
-        // Déterminer la direction basée sur l'index de la ligne
-        const direction = index % 2 === 0 ? 1 : -1;
-        row.dataset.direction = direction === 1 ? 'right' : 'left';
-        
-        let position = direction === 1 ? 0 : -rowWidth;
-        
-        function animate() {
-          position += direction * 2; // Ajustez la vitesse ici si nécessaire
-          if (direction === 1 && position >= rowWidth) {
-            position = 0;
-          } else if (direction === -1 && position >= 0) {
-            position = -rowWidth;
-          }
-          row.style.transform = `translateX(${position}px)`;
-          requestAnimationFrame(animate);
-        }
-        
-        animate();
-      });
-    });
+    const skills = {
+        development: [
+            { name: 'HTML', logo: 'img/html.png' },
+            { name: 'CSS', logo: 'img/css.png' },
+            { name: 'Java', logo: 'img/java.png' },
+            { name: 'Ruby', logo: 'img/ruby.png' },
+            { name: 'JavaScript', logo: 'img/javascript.png' },
+            { name: 'C', logo: 'img/c.png' }
+        ],
+        data: [
+            { name: 'Python', logo: 'img/python.png' },
+            { name: 'SQL', logo: 'img/sql.png' },
+            { name: 'R', logo: 'img/r.png' },
+            { name: 'Access', logo: 'img/access.png' },
+            { name: 'VBA', logo: 'img/vba.png' },
+            { name: 'Power BI', logo: 'img/powerbi.png' },
+            { name: 'DBT', logo: 'img/dbt.png' }
+        ],
+        other: [
+        { name: 'Git & GitHub', logo: 'img/git.png' },
+        { name: 'Zapier', logo: 'img/zapier.png' }
+        ]
+    };
+    
+    function createSkillsSection(title, skills, iconSvg) {
+        const section = document.createElement('div');
+        section.className = 'category';
+        section.innerHTML = `
+            <h2>${iconSvg} ${title}</h2>
+            <div class="skills-grid">
+                ${skills.map(skill => `
+                    <div class="skill-item">
+                        <img src="${skill.logo}" alt="${skill.name} logo">
+                        <span>${skill.name}</span>
+                    </div>
+                `).join('')}
+            </div>
+        `;
+        return section;
+    }
+    
+    const container = document.getElementById('skills-container');
+    
+    const codeIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>';
+    const databaseIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>';
+    const otherIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>';
+    
+    container.appendChild(createSkillsSection('Développement ', skills.development, codeIcon));
+    container.appendChild(createSkillsSection('Data & IA', skills.data, databaseIcon));
+    container.appendChild(createSkillsSection('Autres', skills.other, otherIcon));
   </script>
 </body>
 
