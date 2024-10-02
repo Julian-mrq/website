@@ -11,22 +11,12 @@
 <body>
   <header>
     <nav>
-      <div class="burger-menu" onclick="toggleMenu()">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <div class="nav-left">
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="pages/formation.html">Formation</a></li>
-            <li><a href="pages/experiences.html">Expériences professionnelles</a></li>
-            <li><a href="pages/asso.html">Expériences associatives</a></li>
-        </ul>
-      </div>
-    <div class="nav-right">
-        <button class="transparent-button">Télécharger le CV</button>
-    </div>
+      <ul>
+        <li>
+          <button class="transparent-button">Télécharger le CV</button>
+
+        </li>
+      </ul>
     </nav>
   </header>
   <main>
@@ -76,80 +66,70 @@
       </div>
     </div>
 
-    
     <div class="container">
-      <div class="content-wrapper">
-        <div>
-          <h2>Hey!</h2>
-          <p>I'm Diogo Torres Correia from Portugal!</p>
+      <div>
+        <h2>Hey!</h2>
+        <p>I'm Diogo Torres Correia from Portugal!</p>
+      </div>
+
+      <div class="card-container">
+        
+        <div class="card">
+          <a href="pages/formation.html" target="blank">
+            <div class="card-image" style="background-image: url('/api/placeholder/350/200');"></div>
+          </a>
+          <div class="card-content">
+            <h2>Formation</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+          </div>
         </div>
-  
-        <div class="card-container">
-          
-          <div class="card">
-            <a href="pages/formation.html" target="blank">
-              <div class="card-image" style="background-image: url('/api/placeholder/350/200');"></div>
-            </a>
-            <div class="card-content">
-              <h2>Formation</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.</p>
-            </div>
+
+        <div class="card">
+          <a href="pages/experiences.html" target="blank">
+            <div class="card-image" style="background-image: url('/api/placeholder/350/200');"></div>
+          </a>
+          <div class="card-content">
+            <h2>Expériences professionnelles</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
           </div>
-  
-          <div class="card">
-            <a href="pages/experiences.html" target="blank">
-              <div class="card-image" style="background-image: url('/api/placeholder/350/200');"></div>
-            </a>
-            <div class="card-content">
-              <h2>Expériences professionnelles</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.</p>
-            </div>
-          </div>
-  
-          <div class="card">
-            <a href="pages/formation.html" target="blank">
-              <div class="card-image" style="background-image: url('/api/placeholder/350/200');"></div>
-            </a>
-            <div class="card-content">
-              <h2>Expériences associatives</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.</p>
-            </div>
+        </div>
+
+        <div class="card">
+          <a href="pages/formation.html" target="blank">
+            <div class="card-image" style="background-image: url('/api/placeholder/350/200');"></div>
+          </a>
+          <div class="card-content">
+            <h2>Expériences associatives</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
           </div>
         </div>
       </div>
-      
 
     </div>
 
     <div class="container2">
-      <div class="content-wrapper">
-        <h1>My Technical Skills</h1>
-        <div id="skills-container"></div>
-      </div>
-      
+      <h1>My Technical Skills</h1>
+      <div id="skills-container"></div>
     </div>
 
     <div class="container">
-      <div class="content-wrapper">
-        <div class="certifications-container">
-          <div class="certification">
-              <img src="img/uk.png" class="flag">
-              <h2>TOEFL</h2>
-              <!-- <img src="img/toefl.png" alt="TOEFL Logo" class="logo"> -->
-              <p>Score: 100/120</p>
-          </div>
-          <div class="certification">
-              <img src="img/spain.png" class="flag">
-              <h2>SIELE</h2>
-              <!-- <img src="img/siele.png" alt="SIELE Logo" class="logo"> -->
-              <p>Score: 100/120</p>
-          </div>
+      <div class="certifications-container">
+        <div class="certification">
+            <img src="img/uk.png" class="flag">
+            <h2>TOEFL</h2>
+            <!-- <img src="img/toefl.png" alt="TOEFL Logo" class="logo"> -->
+            <p>Score: 100/120</p>
+        </div>
+        <div class="certification">
+            <img src="img/spain.png" class="flag">
+            <h2>SIELE</h2>
+            <!-- <img src="img/siele.png" alt="SIELE Logo" class="logo"> -->
+            <p>Score: 100/120</p>
         </div>
       </div>
-      
 
     </div>
 
@@ -248,12 +228,6 @@
     container.appendChild(createSkillsSection('Développement ', skills.development, codeIcon));
     container.appendChild(createSkillsSection('Data & IA', skills.data, databaseIcon));
     container.appendChild(createSkillsSection('Autres', skills.other, otherIcon));
-  </script>
-  <script>
-    function toggleMenu() {
-        const navLeft = document.querySelector('.nav-left');
-        navLeft.classList.toggle('active');
-    }
   </script>
 </body>
 

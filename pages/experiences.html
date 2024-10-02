@@ -11,22 +11,14 @@
 <body>
   <header>
     <nav>
-      <div class="burger-menu" onclick="toggleMenu()">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <div class="nav-left">
-        <ul>
-          <li><a href="../index.html">Accueil</a></li>
-          <li><a href="formation.html">Formation</a></li>
-          <li><a href="experiences.html">Expériences professionnelles</a></li>
-          <li><a href="asso.html">Expériences associatives</a></li>
-        </ul>
-      </div>
-      <div class="nav-right">
-        <button class="transparent-button">Télécharger le CV</button>
-    </div>
+      <ul>
+        <!-- <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#contact">Contact</a></li> -->
+        <li>
+          <button class="transparent-button">Télécharger le CV</button>
+        </li>
+      </ul>
     </nav>
   </header>
   <main>
@@ -42,52 +34,49 @@
     </div>
 
     <div class="container">
-      <div class="content-wrapper">
-        <div>
-          <h2>Hey!</h2>
-          <p>I'm Diogo Torres Correia from Portugal!</p>
+      <div>
+        <h2>Hey!</h2>
+        <p>I'm Diogo Torres Correia from Portugal!</p>
+      </div>
+
+      <div class="experience-container">
+        <div class="experience-block">
+          <div class="experience-content">
+              <h2>Intitulé</h2>
+              <p class="dates">2020 - 2024</p>
+              <h3>Entreprise</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <img src="../img/background.jpg" alt="Formation" class="experience-image">
         </div>
-  
-        <div class="experience-container">
-          <div class="experience-block">
-            <div class="experience-content">
-                <h2>Intitulé</h2>
-                <p class="dates">2020 - 2024</p>
-                <h3>Entreprise</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-            <img src="../img/background.jpg" alt="Formation" class="experience-image">
+        <div class="experience-block">
+          <div class="experience-content">
+              <h2>Intitulé</h2>
+              <p class="dates">2020 - 2024</p>
+              <h3>Entreprise</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </div>
-          <div class="experience-block">
-            <div class="experience-content">
-                <h2>Intitulé</h2>
-                <p class="dates">2020 - 2024</p>
-                <h3>Entreprise</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-            <img src="../img/background.jpg" alt="Formation" class="experience-image">
+          <img src="../img/background.jpg" alt="Formation" class="experience-image">
+        </div>
+        <div class="experience-block">
+          <div class="experience-content">
+              <h2>Intitulé</h2>
+              <p class="dates">2020 - 2024</p>
+              <h3>Entreprise</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </div>
-          <div class="experience-block">
-            <div class="experience-content">
-                <h2>Intitulé</h2>
-                <p class="dates">2020 - 2024</p>
-                <h3>Entreprise</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-            <img src="../img/background.jpg" alt="Formation" class="experience-image">
+          <img src="../img/background.jpg" alt="Formation" class="experience-image">
+        </div>
+        <div class="experience-block">
+          <div class="experience-content">
+              <h2>Intitulé</h2>
+              <p class="dates">2020 - 2024</p>
+              <h3>Entreprise</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </div>
-          <div class="experience-block">
-            <div class="experience-content">
-                <h2>Intitulé</h2>
-                <p class="dates">2020 - 2024</p>
-                <h3>Entreprise</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-            <img src="../img/background.jpg" alt="Formation" class="experience-image">
-          </div>
+          <img src="../img/background.jpg" alt="Formation" class="experience-image">
         </div>
       </div>
-      
 
     </div>
 
@@ -138,12 +127,6 @@
   <script src="https://cdn.jsdelivr.net/npm/tsparticles-preset-links@2.12.0/tsparticles.preset.links.bundle.min.js"
     integrity="sha256-Kq9IblhtnUOu75DRD4BIgJ4p4/7JUMMy6eXI/YcTo0c=" crossorigin="anonymous" async="" defer=""
     onload="setupParticlesBackground()">
-  </script>
-  <script>
-    function toggleMenu() {
-        const navLeft = document.querySelector('.nav-left');
-        navLeft.classList.toggle('active');
-    }
   </script>
 </body>
 
