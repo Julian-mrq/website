@@ -1,7 +1,7 @@
 body, html {
   margin: 0;
   padding: 0;
-  font-family: leaguespartan, sans-serif;
+  font-family: montserrat, sans-serif;
   height: 100%;
   background-color: #1a1a1a;
   color: white;
@@ -131,7 +131,7 @@ h1 {
 }
 
 .intro-container {
-  max-width: 800px;
+  width: 60%;
   margin: 50px auto;
   text-align: justify;
   font-size: 18px;
@@ -160,6 +160,10 @@ h1 {
   padding: 50px 0;
   font-size: 16px;
   line-height: 1.5;
+}
+
+.container h1 {
+  text-align: center;
 }
 
 .container h2 {
@@ -193,6 +197,7 @@ h1 {
 
 .card-content {
   padding: 20px;
+  text-align: justify;
 }
 
 .card-container {
@@ -230,6 +235,10 @@ h1 {
   background-color: #1a1a1a;
   color: rgb(240, 240, 240);
   padding: 50px 0;
+}
+
+.container2 h1 {
+  text-align: center;
 }
 
 .category {
@@ -367,7 +376,7 @@ h1 {
   font-weight: 500;
   line-height: 1.6;
   letter-spacing: .0075em;
-  margin: 0;
+  margin-bottom: 5px;
 }
 
 .timeline-element-content p {
@@ -375,6 +384,7 @@ h1 {
   font-weight: 400;
   line-height: 1.6;
   margin: 1em 0 0;
+  text-align: justify;
 }
 
 .timeline-element-date {
@@ -462,6 +472,7 @@ h1 {
 .experience-content {
   flex: 1;
   padding: 20px;
+  text-align: justify;
 }
 
 .experience-image {
@@ -539,6 +550,7 @@ h1 {
 .github-link:hover {
   background-color: #2f363d;
 }
+
 .github-icon {
   width: 20px;
   height: 20px;
