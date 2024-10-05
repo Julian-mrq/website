@@ -477,6 +477,8 @@ h1 {
   transition: transform 0.5s ease, box-shadow 0.5s ease;
   opacity: 0;
   transform: translateY(150px);
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card.visible {
@@ -490,8 +492,12 @@ h1 {
   box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
-.project-content {
-  padding: 20px;
+.github-div {
+  margin: 5% auto;
+}
+
+.card-content {
+  flex: 1;
 }
 
 .project-card .card-image {
@@ -678,6 +684,22 @@ h1 {
     justify-content: center; /* Centre la carte unique */
   }
   .card {
+    width: 100%; /* Une carte par ligne */
+    max-width: 400px; /* Maintient la largeur maximale */
+  }
+}
+
+@media (max-width: 700px) {
+  .project-card {
+    width: calc(50% - 10px); /* 2 cartes par ligne */
+  }
+}
+
+@media (max-width: 600px) {
+  .card-container {
+    justify-content: center; /* Centre la carte unique */
+  }
+  .project-card {
     width: 100%; /* Une carte par ligne */
     max-width: 400px; /* Maintient la largeur maximale */
   }
