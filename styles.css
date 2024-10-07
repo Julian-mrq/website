@@ -683,9 +683,15 @@ h1 {
   .card-container {
     justify-content: center; /* Centre la carte unique */
   }
+
   .card {
     width: 100%; /* Une carte par ligne */
     max-width: 400px; /* Maintient la largeur maximale */
+  }
+
+  .intro-container {
+    width: 80%;
+    font-size: 14px;
   }
 }
 
